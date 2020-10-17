@@ -58,7 +58,6 @@
     $y = 2;
     $a = 8;
     $b = 4;
-    
   ?>
 
   <!-- この下で$xの計算をしていきましょう -->
@@ -115,6 +114,39 @@
     echo "あなたは30歳未満です。";
   }
 
+  $x = 1071;
+  // 以下にif-elseif-else文を書いてください
+  if ($x % 3 == 0 && $x % 7 == 0) {
+    echo "xは3の倍数かつ7の倍数です。";
+  } elseif ($x % 3 == 0) {
+    echo "xは3の倍数ですが7の倍数ではありません。";
+  } elseif ($x % 7 == 0) {
+    echo "xは7の倍数ですが3の倍数ではありません。";
+  } else {
+    echo "xは7の倍数でも3の倍数でもありません。";
+  }
+
+  // 変数$numを定義し、好きな数字を代入してください
+    $num = 7;
+  
+    // 変数$remainderを定義し、変数$numを3で割った時の余りを代入してください
+    $remainder = $num % 3;
+    // switch文を用いてください
+    switch ($remainder) {
+      case 0:
+        echo"大吉です。";
+       break;
+      case 1:
+        echo "中吉です。";
+       break;
+       case 2:
+         echo "小吉です。";
+        break;
+        default:
+          echo "凶です。";
+        break;
+
+  
 
 </body>
 </html>
