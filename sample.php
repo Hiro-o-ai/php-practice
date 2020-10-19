@@ -152,8 +152,147 @@
     $colors[] = "白";
     echo $colors[3];
 
-    
+     // この下に連想配列を作ってください
+    $scores = array(
+      '数学' => 70,
+      '英語' => 90,
+      '国語' => 80);
+      $scores['国語'] += 5;
+      echo $scores['国語']
 
+
+ // この下にfor文を書いてください
+    for ($i = 51; $i <= 100; $i++){
+      echo $i.'<br>';
+    }
+
+// 変数$iを定義してください
+    $i = 2;
+    
+    // while文を書いてください
+    while ($i <= 100){
+      if ($i % 2 == 0) {
+        echo $i.'<br>'; 
+      }
+      $i ++ ;
+    }
+
+    // この下にfor文を書いてください
+    for ($i = 1; $i <= 1000; $i ++ ){
+      if ($i > 500){
+        break;
+      }
+      echo $i;
+      echo '<br>';
+    }
+
+    // この下にfor文を書いてください
+    for ($i =1; $i < 1001; $i++){
+      if ($i % 3 == 0){
+        continue;
+      }
+      echo $i.'<br>';
+    }
+
+    $scores = array('数学' => 70, '英語' => 90, '国語' => 80);
+
+    // この下にforeach文を書いてください
+    foreach ($scores as $key => $value) {
+      echo $key.'は'.$value.'点です。'.'<br>';
+    }
+
+
+     $str = 'progate';
+
+    // strlenを用いて$strの長さをechoしてください
+    echo strlen($str);
+    
+    echo '<br>';
+    
+    $array = array('HTML', 'CSS', 'PHP');
+
+    // countを用いて$arrayの要素数をechoしてください
+    echo count($array);
+    
+    echo '<br>';
+    
+    // randを用いて10から15までのランダムな数字をechoしてください
+    echo rand(10, 15);
+
+
+    // 関数helloを定義してください
+    function hello(){
+      echo 'Hello, world!';
+    }
+    
+    // 関数helloを呼び出してください
+    hello();
+    
+    echo '<br>';
+    // 関数printRectangleAreaを定義してください
+    function printRectangleArea($height, $width){
+      echo $height * $width;
+    }
+    
+    // 引数を(5, 10)としてprintRectangleAreaを呼び出してください
+    printRectangleArea(5, 10);
+
+
+    // 関数getCircleAreaを定義してください
+    function getCircleArea($radius){
+      return $radius * $radius * 3;
+    }
+    
+    // 関数getCircleAreaを呼び出して、戻り値を変数$circleAreaに代入してください
+    $circleArea = getCircleArea(5);
+    
+    // $circleAreaをechoしてください
+    echo $circleArea;
+    
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Progate</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+  <div class="header">
+    <div class="header-left">Progate</div>
+    <div class="header-right">
+      <ul>
+        <li>会社概要</li>
+        <li>採用</li>
+        <li class="selected">お問い合わせ</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="contact-form">
+      <div class="form-title">お問い合わせ</div>
+      <!-- この下にformタグを書いていきましょう -->
+        <form action="sent.php" method = "post"></form>
+      
+    </div>
+  </div>
+  
+  <div class="footer">
+    <div class="footer-left">
+      <ul>
+        <li>会社概要</li>
+        <li>採用</li>
+        <li>お問い合わせ</li>
+      </ul>
+    </div>
+    <div class="like-box">
+      <iframe src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FProgate%2F742679992421539&amp;show_faces=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:300px;" allowTransparency="true"></iframe>
+    </div>
+  </div>
 </body>
 </html>
 
